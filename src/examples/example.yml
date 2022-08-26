@@ -11,6 +11,7 @@ usage:
       jobs:
         - path-filtering/filter:
             base-revision: main
+            s3_bucket_path: s3://bucket-name/folder/file_name
             config-path: .circleci/continue-config.yml
             mapping: |
               src/.* build-code true

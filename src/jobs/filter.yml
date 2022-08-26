@@ -38,6 +38,10 @@ parameters:
     type: string
     description: "Resource class to use"
     default: "small"
+  s3_bucket_path:
+    type: string
+    description: "S3 bucket Path"
+    default: ""
   tag:
     type: string
     default: "3.8"
@@ -55,6 +59,7 @@ steps:
         - attach_workspace:
             at: << parameters.workspace_path >>
   - set-parameters:
+      s3_bucket_path: << parameters.s3_bucket_path >>
       base-revision: << parameters.base-revision >>
       mapping: << parameters.mapping >>
   - continuation/continue:
