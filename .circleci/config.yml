@@ -51,7 +51,7 @@ workflows:
             - shellcheck/check
       # Publish development version(s) of the orb.
       - orb-tools/publish-dev:
-          orb-name: circleci/path-filtering
+          orb-name: red-eyes/path-filtering
           context: orb-publishing
           requires: [hold-for-dev-publish]
       # Trigger an integration workflow to test the

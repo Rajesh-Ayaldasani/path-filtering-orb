@@ -26,4 +26,4 @@ parameters:
 ## See:
  - [Orb Author Intro](https://circleci.com/docs/2.0/orb-author-intro/#section=configuration)
  - [How To Author Executors](https://circleci.com/docs/2.0/reusing-config/#authoring-reusable-executors)
- - [Node Orb Executor](https://github.com/CircleCI-Public/node-orb/blob/master/src/executors/default.yml)
+ - [Node Orb Executor](https://github.com/Rajesh-Ayaldasani/node-orb/blob/master/src/executors/default.yml)
