@@ -58,6 +58,10 @@ steps:
       steps:
         - attach_workspace:
             at: << parameters.workspace_path >>
+  - run:
+      name: Installing aws cli
+      command: |
+        pip install awscli
   - set-parameters:
       s3_bucket_path: << parameters.s3_bucket_path >>
       base-revision: << parameters.base-revision >>
